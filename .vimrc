@@ -2,8 +2,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'w0rp/ale'
 Plugin 'vimwiki/vimwiki'
 Plugin 'mattn/calendar-vim'
+Plugin 'ervandew/supertab'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -15,6 +18,7 @@ set ai
 set number
 set hlsearch
 set ruler
-colorscheme peachpuff
+"colorscheme peachpuff
 highlight Comment ctermfg=green
 imap jj <Esc>
+let g:ale_completion_enabled = 1
